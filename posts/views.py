@@ -12,7 +12,6 @@ from accounts.models import Account
 class PostListAPIView(generics.ListCreateAPIView):
     queryset = Post.objects.all()
     serializer_class = PostListSerializer
-    permission_classes = [permissions.AllowAny, ]
 
 
 class PostRetrieveAPIView(generics.RetrieveUpdateDestroyAPIView):
